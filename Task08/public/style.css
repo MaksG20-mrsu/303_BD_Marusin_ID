@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+    color: #243343;
+    font: 16px/1.5 system-ui, sans-serif;
+}
+
+.site-header {
+    background: #234768;
+}
+
+nav, main {
+    max-width: 840px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1.5rem;
+    padding-block: .8rem;
+}
+
+nav a {
+    color: #fff;
+}
+
+main {
+    padding-block: 1.3rem 2rem;
+}
+
+h1 {
+    margin: 0 0 1rem;
+    font-size: 1.65rem;
+}
+
+a {
+    color: #194c76;
+    text-underline-offset: .18em;
+}
+
+.page-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: .65rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-links a {
+    display: block;
+    padding: .85rem 1rem;
+    background: #fff;
+    border: 1px solid #c9d5df;
+    border-radius: 5px;
+}
+
+form {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #c9d5df;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 215px), 1fr));
+    gap: .75rem 1rem;
+}
+
+label, legend {
+    font-weight: 600;
+}
+
+.fields input, .fields select {
+    display: block;
+    width: 100%;
+    margin-top: .2rem;
+    padding: .43rem .55rem;
+    color: inherit;
+    border: 1px solid #9aafbf;
+    border-radius: 4px;
+    background: #fff;
+    font: inherit;
+}
+
+fieldset {
+    min-width: 0;
+    margin: .9rem 0 0;
+    border: 1px solid #c9d5df;
+    border-radius: 4px;
+}
+
+.checkbox {
+    display: block;
+    font-weight: 400;
+}
+
+button {
+    margin-top: 1rem;
+    padding: .5rem .9rem;
+    border: 1px solid #234768;
+    border-radius: 4px;
+    background: #234768;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #18374f;
+}
+
+:focus-visible {
+    outline: 2px solid #1d6faa;
+    outline-offset: 2px;
+}
+
+.notice, .error {
+    padding: .6rem .8rem;
+    border-radius: 4px;
+}
+
+.notice {
+    color: #195334;
+    background: #e7f4eb;
+}
+
+.error {
+    color: #8c2525;
+    background: #fbecec;
+}
